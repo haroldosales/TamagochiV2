@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tamagochi.Lista"
+             Title="Lista">
+    <VerticalStackLayout Padding="10" Spacing="12">
+        <Label 
+            Text="Escolhar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Button
+            Text="Lista Pokemon"
+            Clicked="OnPokemonClicked"
+            HorizontalOptions="Fill" />
+
+
+
+        <Entry
+    x:Name="NamePok"
+    Placeholder="Digite nome do pokemon"
+    Keyboard="Text"
+    HorizontalOptions="Fill"
+    SemanticProperties.Description="Campo de entrada de texto para o nome" />
+
+        <!-- Results will be shown here after clicking the button -->
+        <Editor
+            x:Name="ResultEditor"
+            IsReadOnly="True"
+            AutoSize="TextChanges"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="Fill"
+            FontSize="14" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tamagochi.MainPage">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Image
+            Source="dotnet_bot.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a submarine number ten" />
+
+        <Label
+            Text="Hello, World!"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+        <Label
+            Text="Qual seu nome ?"
+            Style="{StaticResource SubHeadline}"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+        <Entry
+            x:Name="NameEntry"
+            Placeholder="Digite seu nome"
+            Keyboard="Text"
+            HorizontalOptions="Fill"
+            SemanticProperties.Description="Campo de entrada de texto para o nome" />
+
+        <Button
+            x:Name="CounterBtn"
+            Text="Lista os Pokemon" 
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnCounterClicked"
+            HorizontalOptions="Fill" />
+
+
+        <Button
+            Text="Escolhar Pokemon"
+            Clicked="OnCounterClicked2"
+            HorizontalOptions="Fill" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

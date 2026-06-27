@@ -7,8 +7,12 @@
     Title="Tamagochi">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Welcome"
+        ContentTemplate="{DataTemplate local:Welcome}"
+        Route="Welcome" />
+    
+    
+        
 
 </Shell>
+    

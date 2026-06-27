@@ -10,25 +10,6 @@
             HeightRequest="185"
             Aspect="AspectFit"
             SemanticProperties.Description="dot net bot in a submarine number ten" />
-
-        <Label
-            Text="Hello, World!"
-            Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1" />
-
-        <Label
-            Text="Qual seu nome ?"
-            Style="{StaticResource SubHeadline}"
-            SemanticProperties.HeadingLevel="Level2"
-            SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
-        <Entry
-            x:Name="NameEntry"
-            Placeholder="Digite seu nome"
-            Keyboard="Text"
-            HorizontalOptions="Fill"
-            SemanticProperties.Description="Campo de entrada de texto para o nome" />
-
         <Button
             x:Name="CounterBtn"
             Text="Lista os Pokemon" 

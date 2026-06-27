@@ -4,10 +4,15 @@ namespace Tamagochi
     {
         Service Escolhar = new Service();
         Pokemon pok = new Pokemon();
+        
         public Lista()
         {
+           
             InitializeComponent();
+
         }
+
+       
 
         private async void OnPokemonClicked(object sender, EventArgs e)
         {

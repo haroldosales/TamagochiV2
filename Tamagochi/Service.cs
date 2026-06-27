@@ -71,6 +71,8 @@
             }
         }
 
+       
+
         // Minimal models to map the JSON returned by pokeapi.co for the fields used.
         private class Pokemon
         {

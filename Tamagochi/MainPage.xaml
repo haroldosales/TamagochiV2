@@ -10,6 +10,11 @@
             HeightRequest="185"
             Aspect="AspectFit"
             SemanticProperties.Description="dot net bot in a submarine number ten" />
+        <Label
+            Text="{Binding StringFormat='Bem vindo ao Tamacgochi {0}!', Path=nome}"
+            FontSize="18"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
         <Button
             x:Name="CounterBtn"
             Text="Lista os Pokemon" 

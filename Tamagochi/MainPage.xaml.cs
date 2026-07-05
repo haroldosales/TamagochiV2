@@ -1,24 +1,35 @@
-﻿
+﻿using System;
+using System.Threading.Tasks;
+
 namespace Tamagochi
 {
     public partial class MainPage : ContentPage
     {
-
-
+        public string nome { get; set; }
 
         public MainPage()
         {
-
             InitializeComponent();
-
+            BindingContext = this;
+            _ = PromptForNameAsync();
         }
 
+        private async Task PromptForNameAsync()
+        {
+            var result = await Application.Current.MainPage.DisplayPromptAsync(
+                "Digite seu nome",
+                "Por favor, insira seu nome:");
+
+            if (!string.IsNullOrWhiteSpace(result))
+                nome = result;
+            else
+                nome = "Usuário";
+
+            OnPropertyChanged(nameof(nome));
+        }
 
         private async void OnCounterClicked(object? sender, EventArgs e)
         {
-                
-
-            // Show a quick confirmation and navigate to the Lista page
             await Navigation.PushAsync(new Lista());
         }
 
@@ -26,6 +37,5 @@ namespace Tamagochi
         {
             await Navigation.PushAsync(new Escolhar());
         }
-
     }
 }

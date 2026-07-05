@@ -14,14 +14,25 @@
             Clicked="OnPokemonClicked"
             HorizontalOptions="Fill" />
 
-
+           <Line
+            X1="0" Y1="0" X2="1" Y2="0"
+            Stroke="Black"
+            StrokeThickness="1"
+            HorizontalOptions="FillAndExpand" />
 
         <Entry
     x:Name="NamePok"
     Placeholder="Digite nome do pokemon"
     Keyboard="Text"
     HorizontalOptions="Fill"
-    SemanticProperties.Description="Campo de entrada de texto para o nome" />
+    SemanticProperties.Description="Campo de entrada de texto para o nome" 
+     />
+      <Button
+            Text="Escolhar Pokemon"
+            Clicked="OnePokemonClicked"
+            HorizontalOptions="Fill" />
+
+
 
         <!-- Results will be shown here after clicking the button -->
         <Editor

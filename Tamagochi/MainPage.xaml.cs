@@ -7,11 +7,13 @@ namespace Tamagochi
     {
         public string nome { get; set; }
 
+
         public MainPage()
         {
             InitializeComponent();
             BindingContext = this;
             _ = PromptForNameAsync();
+
         }
 
         private async Task PromptForNameAsync()
